@@ -1,0 +1,27 @@
+<!-- 기존의 이벤트 처리 방식 -->
+<button onclick="doStuff">Button</button>
+
+
+<!-- 이벤트 위임 -->
+<div id="parent">
+  <button id="ok">Ok</button>
+  <button id="cancel">Cancel</button>
+</div>
+
+<script>
+  document.getElementById('parent').addEventListener('click', function(event) {
+    var button = event.target;
+
+    // 클릭한 버튼에 따라 각기 다른 작업을 한다.
+    switch (button.id) {
+      case 'ok':
+	console.log('OK!');
+	break;
+      case 'cancel':
+	console.log('Cancel');
+	break;
+      default:
+	new Error('Unexpected button ID');
+    };
+  });
+</script>
