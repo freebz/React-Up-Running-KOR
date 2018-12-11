@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>Hello React</title>
+	<meta charset="utf-8">
+    </head>
+    <body>
+	<div id="app">
+	    <!-- 앱이 렌더링되는 위치 -->
+	</div>
+	<script src="react/build/react.js"></script>
+	<script src="react/build/react-dom.js"></script>
+	<script src="babel/browser.js"></script>
+	<script type="text/babel">
+	  // 구문 오류:
+	  // 인접한 JSX 요소를 바깥쪽 태그로 감싸야 한다.
+	  
+	  var Example = React.createClass({
+	    render: function() {
+	      return (
+	        <span>
+		  Hello
+		</span>
+		<span>
+		  World
+		</span>
+	      );
+	    }
+	  });
+	  
+	  ReactDOM.render(	    
+	    <Example/>,
+	    document.getElementById("app")
+	  );
+	</script>
+    </body>
+</html>
