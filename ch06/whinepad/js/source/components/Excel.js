@@ -197,7 +197,7 @@ class Excel extends Component {
 		  const edit = this.state.edit;
 		  let content = row[cell];
 		  if (!isRating && edit && edit.row === rowidx &&
-		      eidt.key === schema.id) {
+		      edit.key === schema.id) {
 		    content = (
 		      <form onSubmit={this._save.bind(this)}>
 		        <FormInput ref="input" {...schema}

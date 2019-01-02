@@ -56,7 +56,7 @@ class Whinepad extends Component {
   _search(e) {
     const needle = e.target.value.toLowerCase();
     if (!needle) {
-      this.setSTate({data: this._preSearchData});
+      this.setState({data: this._preSearchData});
       return;
     }
     const fields = this.props.schema.map(item => item.id);
