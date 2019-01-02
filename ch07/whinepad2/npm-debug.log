@@ -1,0 +1,31 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/local/bin/npm', 'test' ]
+2 info using npm@4.0.5
+3 info using node@v8.10.0
+4 verbose run-script [ 'pretest', 'test', 'posttest' ]
+5 info lifecycle whinepad@2.0.0~pretest: whinepad@2.0.0
+6 silly lifecycle whinepad@2.0.0~pretest: no script for pretest, continuing
+7 info lifecycle whinepad@2.0.0~test: whinepad@2.0.0
+8 verbose lifecycle whinepad@2.0.0~test: unsafe-perm in lifecycle true
+9 verbose lifecycle whinepad@2.0.0~test: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/home/fx/work/React: Up & Running/ch07/whinepad2/node_modules/.bin:/usr/local/lib/node_modules/npm/bin/node-gyp-bin:/home/fx/work/React: Up & Running/ch07/whinepad2/node_modules/.bin:/home/fx/.sdkman/candidates/springboot/current/bin:/home/fx/bin:/home/fx/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/var/local/activator/bin
+10 verbose lifecycle whinepad@2.0.0~test: CWD: /home/fx/work/React: Up & Running/ch07/whinepad2
+11 silly lifecycle whinepad@2.0.0~test: Args: [ '-c', 'jest' ]
+12 silly lifecycle whinepad@2.0.0~test: Returned: code: 1  signal: null
+13 info lifecycle whinepad@2.0.0~test: Failed to exec test script
+14 error Test failed.  See above for more details.
+15 verbose exit [ 1, true ]
+16 verbose stack Error: write EPIPE
+16 verbose stack     at _errnoException (util.js:1022:11)
+16 verbose stack     at WriteWrap.afterWrite [as oncomplete] (net.js:880:14)
+17 verbose cwd /home/fx/work/React: Up & Running/ch07/whinepad2
+18 error Linux 4.15.0-43-generic
+19 error argv "/usr/bin/node" "/usr/local/bin/npm" "test"
+20 error node v8.10.0
+21 error npm  v4.0.5
+22 error code EPIPE
+23 error errno EPIPE
+24 error syscall write
+25 error write EPIPE
+26 error If you need help, you may report this error at:
+26 error     <https://github.com/npm/npm/issues>
+27 verbose exit [ 1, true ]
